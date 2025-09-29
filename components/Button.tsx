@@ -15,7 +15,7 @@ type ButtonAsButton = CommonProps &
   };
 
 type ButtonAsLink = CommonProps &
-  AnchorHTMLAttributes<HTMLAnchorElement> & {
+  Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'type' | 'href'> & {
     href: string;
     newTab?: boolean;
   };
