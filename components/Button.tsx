@@ -65,7 +65,7 @@ export function Button(props: ButtonProps) {
     );
   }
 
-  const { variant = 'primary', className, children, type = 'button', ...rest } = props;
+  const { variant = 'primary', className, children, type = 'button', ...rest } = props as ButtonAsButton;
   const baseStyles = clsx(
     'inline-flex items-center justify-center rounded-xl px-6 py-3 text-sm font-medium transition-all duration-150 focus:outline-none',
     variantStyles[variant],
