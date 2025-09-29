@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-brand-primary: #6B9080;
+  --color-brand-primary-button: #5A7A6C;
+  --color-brand-surface1: #F6FFF8;
+  --color-brand-surface2: #EAF4F4;
+  --color-brand-surface3: #CCE3DE;
+  --color-brand-surface4: #A4C3B2;
+  --color-brand-ink: #0B1220;
+  --color-brand-white: #FFFFFF;
+}
+
+body {
+  @apply bg-brand-surface1 text-brand-ink font-sans;
+}
+
+::selection {
+  background: var(--color-brand-primary);
+  color: var(--color-brand-white);
+}
+
+a {
+  @apply underline-offset-4 decoration-brand-primary;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-brand-primary);
+  outline-offset: 2px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
