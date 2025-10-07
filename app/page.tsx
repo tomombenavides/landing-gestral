@@ -136,7 +136,7 @@ export default function Page() {
             <ul className="flex items-center gap-6 text-sm font-medium text-brand-ink/80">
               <li>
                 <Link href="#valor" className="hover:text-brand-ink focus-visible:text-brand-ink">
-                  Valor
+                  Por qué Gestral
                 </Link>
               </li>
               <li>
